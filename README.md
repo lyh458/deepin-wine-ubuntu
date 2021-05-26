@@ -24,6 +24,44 @@
 
 ### （1）安装教程
 
+#### Install in Ubuntu 18.04 (tested)
+
+- 下载离线包
+```git
+git clone https://github.com/lyh458/deepin-wine-ubuntu.git
+```
+
+- 安装deepin-wine
+
+```bash
+cd deepin-wine-ubuntu
+sudo chmod u+x install_2.8.22.sh
+./install_2.8.22.sh
+```
+
+- 下载[Ubuntu微信安装包](https://gitee.com/wszqkzqk/deepin-wine-containers-for-ubuntu/raw/master/deepin.com.wechat_2.6.8.65deepin0_i386.deb)
+
+- 安装微信
+```bash
+sudo dpkg -i deepin.com.wechat_2.6.8.65deepin0_i386.deb
+```
+
+- 启动一次微信，然后下载win最新版本的微信安装包
+
+    - 2021.07，如果使用deepin-wine默认的配置，window系统会默认为win XP，微信3.2.1以上版本的都无法安装，所以下载微信最新版时请选择（win7以下版本）**Download for systems below Windows 7**，否则无法安装成功；微信3.2.1应该是支持win7以下系统的最新版本了。如果想装更新的微信版本，可以尝试修改deepin-wine配置中的系统版本为win8或win10（未测试）。
+
+    ![wechat for system below win 7](https://cdn.jsdelivr.net/gh/lyh458/ImageRepo@main/image/1626052575615-1626052575609.png)
+
+
+- 升级微信
+
+```bash
+env WINEPREFIX=~/.deepinwine/Deepin-WeChat deepin-wine ~/Downloads/WeChatSetup.exe
+```
+
+出现问题请参考：[deepin-wine下微信升级到最新版方法](https://github.com/wszqkzqk/deepin-wine-ubuntu/issues/339)
+
+
 #### 在线安装(目前尚有bug)
 
 直接使用在线安装脚本，安装最新的Release版本:
