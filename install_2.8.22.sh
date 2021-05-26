@@ -15,8 +15,8 @@ wget -O 6.1deepin-wine-plugin_1.0deepin2_amd64.deb http://packages.deepin.com/de
 wget -O 6.2deepin-wine-plugin-virtual_1.0deepin3_all.deb http://packages.deepin.com/deepin/pool/non-free/d/deepin-wine-plugin-virtual/deepin-wine-plugin-virtual_1.0deepin3_all.deb
 wget -O 7deepin-wine-helper_1.2deepin8_i386.deb http://packages.deepin.com/deepin/pool/non-free/d/deepin-wine-helper/deepin-wine-helper_1.2deepin8_i386.deb
 wget -O 8deepin-wine-uninstaller_0.1deepin2_i386.deb http://packages.deepin.com/deepin/pool/non-free/d/deepin-wine-uninstaller/deepin-wine-uninstaller_0.1deepin2_i386.deb
-wget http://ftp.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_1.5.1-2_amd64.deb
-wget http://ftp.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_1.5.1-2_i386.deb
+wget http://packages.deepin.com/deepin/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_1.5.1-2_amd64.deb
+wget http://packages.deepin.com/deepin/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_1.5.1-2_i386.deb
 
 echo '准备添加32位支持'
 sudo dpkg --add-architecture i386
